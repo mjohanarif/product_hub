@@ -7,7 +7,7 @@ class Skeleton extends StatelessWidget {
   final Color? highlightColor;
   final double? width;
   final double? height;
-  final double? radius;
+  final BorderRadius? borderRadius;
 
   const Skeleton({
     super.key,
@@ -15,7 +15,7 @@ class Skeleton extends StatelessWidget {
     this.highlightColor,
     this.width,
     this.height,
-    this.radius,
+    this.borderRadius,
   });
 
   @override
@@ -29,7 +29,7 @@ class Skeleton extends StatelessWidget {
         height: height,
         decoration: BoxDecoration(
           color: AppColors.grey,
-          borderRadius: BorderRadius.circular(radius ?? 4),
+          borderRadius: borderRadius ?? BorderRadius.circular(4),
         ),
       ),
     );

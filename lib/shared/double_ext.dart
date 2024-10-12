@@ -1,9 +1,9 @@
 import 'package:intl/intl.dart';
 
-extension StringExt on String {
+extension DoubleExt on double {
   String get currencyFormatRp => NumberFormat.currency(
         locale: 'id',
         symbol: 'Rp. ',
         decimalDigits: 0,
-      ).format(double.parse(this));
+      ).format(this);
 }

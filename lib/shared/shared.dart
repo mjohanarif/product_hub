@@ -9,5 +9,5 @@ export 'constant.dart';
 export 'exception.dart';
 export 'failure.dart';
 export 'network_info.dart';
-export 'string_ext.dart';
+export 'double_ext.dart';
 export 'usecase_interface.dart';
